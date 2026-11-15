@@ -5,16 +5,19 @@ public class RecetaDeCocina {
         //Receta de cocina
         System.out.println("*** Receta de cocina ***");
         var consola = new Scanner(System.in);
-
+        // Nombre de la receta
         System.out.print("Ingrese el nombre : ");
         var NombreReceta = consola.nextLine();
 
+        //Ingredientes
         System.out.print("Ingrese los ingredientes: ");
         var ingrediente = consola.nextLine();
 
+        //Tiempo de preparación
         System.out.print("Ingresa el tiempo de preparación (min) :");
         var tiempoPreparacion = Integer.parseInt(consola.nextLine());
 
+        //Grado de dificultad para preparar la receta
         System.out.print("Ingresa la dificaultad : ");
         var dificultad = consola.nextLine();
 
