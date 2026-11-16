@@ -18,7 +18,7 @@ public class GeneradoIDUnico {
 
         // Año de nacimiento.
         System.out.print(" Ingresa tú año de nacimiento (yyyy) : ");
-        var anoNacimiento = consola.nextLine();
+        var anioNacimiento = consola.nextLine();
 
         //Generar valor aleatorio.
         var numero = random.nextInt(5);
@@ -28,7 +28,7 @@ public class GeneradoIDUnico {
         System.out.println("\tTú nuevo número de identificación(ID) generado por el sistema es el siguiente");
         System.out.printf(""" 
                \t %s%s%s%04d
-                """, nombre.substring(0, 2).toUpperCase(), apellido.substring(0, 2).toUpperCase(), anoNacimiento.substring(anoNacimiento.length() - 2), numero);
+                """, nombre.substring(0, 2).toUpperCase(), apellido.substring(0, 2).toUpperCase(), anioNacimiento.substring(anioNacimiento.length() - 2), numero);
         System.out.println("\t Felicidades !!!!");
     }
 }
