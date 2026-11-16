@@ -21,14 +21,14 @@ public class GeneradoIDUnico {
         var anioNacimiento = consola.nextLine();
 
         //Generar valor aleatorio.
-        var numero = random.nextInt(5);
+        var numero = random.nextInt(999) +1;
 
         System.out.println();
         System.out.printf("Hola : %s,\n", nombre);
         System.out.println("\tTú nuevo número de identificación(ID) generado por el sistema es el siguiente");
         System.out.printf(""" 
                \t %s%s%s%04d
-                """, nombre.substring(0, 2).toUpperCase(), apellido.substring(0, 2).toUpperCase(), anioNacimiento.substring(anioNacimiento.length() - 2), numero);
+                """, nombre.trim().substring(0, 2).toUpperCase(), apellido.trim().substring(0, 2).toUpperCase(), anioNacimiento.substring(anioNacimiento.length() - 2), numero);
         System.out.println("\t Felicidades !!!!");
     }
 }
