@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class TicketVenta {
     public static void main(String[] args) {
         System.out.println(" *** Generación ticket de  venta ***");
+
         var consola = new Scanner(System.in);
 
         System.out.print("Precio Leche : ");
